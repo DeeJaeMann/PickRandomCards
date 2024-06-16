@@ -6,14 +6,12 @@
         {
             Console.Write("Enter the number of cards to pick: ");
             string line = Console.ReadLine();
-            string[] cards = [];
 
             if (int.TryParse(line, out int numberOfCards))
             {
                 foreach (string card in CardPicker.PickSomeCards(numberOfCards))
                 {
                     Console.WriteLine(card);
-
                 }
 
             }
